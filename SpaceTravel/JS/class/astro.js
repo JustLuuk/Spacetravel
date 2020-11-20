@@ -40,7 +40,6 @@ class Vijand2 {
       this.y = random(100,canvas.height - 100);
       this.d = 50;
       this.v = 3 + random (3*l);
-
   }
 
   beweeg() {
