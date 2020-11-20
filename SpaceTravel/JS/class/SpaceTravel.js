@@ -95,7 +95,7 @@ class SpaceTravel {
     fill(50,80,80,.5);
     stroke(150,200,255,.7);
     strokeWeight(3);
-    text('Gefeliciteerd!\nJe hebt Golf '+this.level+' gehaald!\n\nDruk op ENTER',0,0,canvas.width,canvas.height / 2);
+    text('Gefeliciteerd!\nJe hebt wave '+this.level+' gehaald!\n\nDruk op ENTER',0,0,canvas.width,canvas.height / 2);
     pop();
   }
 
