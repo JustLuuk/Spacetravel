@@ -86,14 +86,14 @@ class SpaceTravel {
         textSize(32);
         strokeWeight(2);
         fill(0, 0, 0, 0.75);
-        text("Druk op een toets om te beginnen. (niet de pijltjes)\n\n je beweegd met behulp van de pijltjes toetsen.\n\n Er zijn 10 verschillende waves", 0, canvas.height * 1 / 2, canvas.width, canvas.height * 1 / 3);
+        text("Druk op een toets om te beginnen. (niet de pijltjes)\n\n je beweegd met behulp van de pijltjes toetsen.(Je kan ook langzamer en sneller)\n\n Er zijn 10 verschillende waves", 0, canvas.height * 1 / 2, canvas.width, canvas.height * 1 / 3);
         pop();
     }
 
     levelScherm() {
         push();
         fill(50, 80, 80, .5);
-        stroke(150, 200, 255, .7);
+        stroke(30, 200, 30, .7);
         strokeWeight(3);
         text('Gefeliciteerd!\nJe hebt wave ' + this.level + ' gehaald!\n\nDruk op ENTER', 0, 0, canvas.width, canvas.height / 2);
         pop();
@@ -106,11 +106,11 @@ class SpaceTravel {
 
         }
         else {
-            tekst += '\nHelaas: je bent af.\n\n Je hebt ' + this.level + ' waves gespeeld';
+            tekst += '\nHelaas: je bent af.\n\n Volgende keer beter \n\n Je hebt ' + this.level + ' waves gespeeld';
         }
         push();
         fill(0);
-        stroke(100, 75, 50, .8);
+        stroke(255, 20, 50, .8);
         strokeWeight(3);
         text(tekst + '\n\nDruk SPATIE voor nieuw spel.', 0, 0, canvas.width, canvas.height);
         pop();
