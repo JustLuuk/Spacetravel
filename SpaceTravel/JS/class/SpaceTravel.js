@@ -37,7 +37,6 @@ class SpaceTravel {
   }
 
   update() {
-    // wat gebeurt er in het level
     for (var v = 0; v < this.vijanden.length; v++) {
         this.vijanden[v].beweeg();
         if (this.vijanden[v].raakt(this.speler)) {
@@ -71,7 +70,7 @@ class SpaceTravel {
     textSize(30);
     var marge = 100;
     fill(255);
-    text("Golf "+this.level,marge,marge,canvas.width*1.7);   
+    text("Wave "+this.level,marge,marge,canvas.width*1.7);   
     pop();
   }
 
@@ -87,7 +86,7 @@ class SpaceTravel {
     textSize(32);
     strokeWeight(2);
     fill(0,0,0,0.75);
-    text("Druk op een toets om te beginnen.\n\n je beweegd met behulp van de pijltjes toetsen.\n",0,canvas.height * 1 / 2,canvas.width,canvas.height * 1 / 3);
+    text("Druk op een toets om te beginnen. (niet de pijltjes)\n\n je beweegd met behulp van de pijltjes toetsen.\n\n Er zijn 10 verschillende waves",0,canvas.height * 1 / 2,canvas.width,canvas.height * 1 / 3);
     pop();
   }
 
@@ -107,7 +106,7 @@ class SpaceTravel {
    
     }
     else {
-        tekst += '\nHelaas: je bent af.\n\n Je hebt '+this.level+' golven gespeeld';
+        tekst += '\nHelaas: je bent af.\n\n Je hebt '+this.level+' waves gespeeld';
     }
     push();
     fill(0);
